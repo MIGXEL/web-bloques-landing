@@ -1,5 +1,6 @@
 :root {
   --body-font: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --bigger-font-size: 2.5rem;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: 0.938rem;
@@ -127,7 +128,12 @@ img{
     left: 0;
     z-index: var(--z-fixed);
     background-color: var(--background-color);
-    border-bottom: 0 1px 4px rgba(36,36,36,.5);
+    transition: all .3s;
+    
+}
+
+.av_scroll_activado{
+    box-shadow: 0 1px 4px rgba(36,36,36,.5);
 }
 
 .av_nav{
@@ -201,10 +207,11 @@ img{
     right: 0;
 }
 
-/* SECCIONES */
+/***********SECTIONS*********/
 
 .av_container_banner{
     width: 100%;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -244,7 +251,8 @@ img{
     background-color: var(--first-color);
 }
 
-.av_content_section{
+/***************NOSOTROS*****************/
+.av_content_section_nosotros{
     width: 100%;
     height: 100%;
     display: flex;
@@ -313,4 +321,55 @@ img{
 .av_item_net, a{
     color: var(--white-color);
     font-size: var(--h2-font-size);
+}
+
+/***************SERVICES*****************/
+.av_content_section_services{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.av_service{
+    width: 350px;
+    padding: var(--mb-3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(118, 179, 157, .4);
+    border-radius: .5rem;
+}
+
+.av_num_service{
+    padding: var(--mb-1);
+}
+
+.av_num_service p{
+    font-size: var(--bigger-font-size);
+    color: var(--first-color);
+}
+
+.av_info_service{
+    display: flex;
+    flex-direction: column;
+}
+
+.av_title_service{
+    font-size: var(--h2-font-size);
+    color: var(--first-color);
+    margin-bottom: var(--mb-2);
+}
+.av_title_service::before{
+    content: attr(data-count) '| ';
+    font-size: var(--bigger-font-size);
+}
+
+.av_content_service{
+    text-align: justify;
+    line-height: 1.5rem;
+    font-size: var(--normal-font-size);
 }
