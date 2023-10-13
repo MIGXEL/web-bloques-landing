@@ -73,4 +73,4 @@ const srl = ScrollReveal({
     reset: true
 })
 
-srl.reveal('.av_content_section_nosotros');
+srl.reveal('.av_content_section_nosotros, .av_content_form_contact');

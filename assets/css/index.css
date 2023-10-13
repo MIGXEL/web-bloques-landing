@@ -331,6 +331,7 @@ img{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    gap: var(--mb-2);
 }
 
 .av_service{
@@ -372,4 +373,108 @@ img{
     text-align: justify;
     line-height: 1.5rem;
     font-size: var(--normal-font-size);
+}
+
+/***************CONTACTO*****************/
+
+.av_content_contact{
+    display: flex;
+    flex-direction: column;
+}
+
+.av_content_info_contact{
+    background-color: var(--first-color);
+    display: flex;
+    flex-direction: column;
+    padding: var(--mb-4);
+    gap: var(--mb-3);
+}
+
+.av_title_info_contact{
+    font-size: var(--big-font-size);
+    color: var(--light-color);
+}
+
+.av_label_data{
+    font-size: 1.05rem;
+    color: var(--second-color);
+}
+
+.av_group_data{
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+
+.av_group_data span{
+    color: var(--light-color);
+    font-size: 1.3rem;
+}
+
+.av_item_net_form i{
+    font-size: 1.8rem;
+    color: var(--second-color);
+}
+
+.av_content_form_contact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: var(--mb-4);
+    gap: var(--mb-3);
+}
+
+.av_title_form_contact{
+    font-size: var(--big-font-size);
+    color: var(--first-color);
+    text-align: center;
+}
+
+.av_subtitle_form_contact{
+    text-align: justify;
+    font-size: 1.05rem;
+    width: 100%;
+}
+
+.av_form_contact{
+    display: flex;
+    flex-direction: column;
+    gap: var(--mb-1);
+}
+
+.av_form_group{
+    margin-bottom: var(--mb-1);
+}
+
+.av_label_form{
+    font-size: 1.02rem;
+    width: 100%;
+    display: block;
+    color: var(--first-color);
+    font-weight: 500;
+    margin-bottom: var(--mb-1);
+}
+
+.av_input{
+    width: 100%;
+    display: block;
+    border: none;
+    padding: .8rem;
+    border-radius: 2px;
+    font-size: 1.1rem;
+    
+}
+
+.av_btn_form{
+    text-align: center;
+    padding: .8rem;
+    background-color: var(--background-color);
+    border: 1px solid var(--first-color);
+    color: var(--first-color);
+    transition: all .3s;
+}
+
+.av_btn_form:hover{
+    background-color: var(--first-color);
+    border: 1px solid var(--first-color);
+    color: var(--light-color);
 }
